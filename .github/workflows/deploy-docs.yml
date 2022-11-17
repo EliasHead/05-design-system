@@ -22,7 +22,7 @@ jobs:
 
       - run: yarn build
         env: 
-          TURBO_TOKEN: 4T9wHZMBAcvII9WELFuOsgZP
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: head
 
       - name: Deploy storybook
